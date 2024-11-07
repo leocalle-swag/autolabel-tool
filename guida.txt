@@ -1,0 +1,5 @@
+rispondi la bottiglia é intatta o gravemente danneggiata, schiacciata o tagliata? 
+rispondi 0 -> se INTATTA, rispondi 1 -> se la bottiglia é GRAVEMENTE danneggiata, GRAVEMENTE schiacciata o tagliata . 
+ATTENTO AL DESIGN DELLA BOTTIGLIA
+ATTENTO al design della bottiglia, alle luci e segnalo che la foto é scattata con grand angolo, ci dobbiamo aiutare é un progetto molto importante! SII PRECISO! DOBBIAMO VINCERE IL PROGETTO!
+Rispondi SOLO 0 oppure 1

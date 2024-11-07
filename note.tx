@@ -1,0 +1,17 @@
+/app
+  /api
+    /profile
+      /save-key
+        route.ts
+      /get-key
+        route.ts
+    /auto-label
+      route.ts
+  /profile
+    page.tsx
+  layout.tsx
+  page.tsx
+/components
+  AutoLabelInterface.tsx
+/lib
+  util.ts
