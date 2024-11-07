@@ -5,12 +5,15 @@ A modern web application for automated image labeling using OpenAI's GPT-4 Visio
 ## 📸 Screenshots
 
 ![API Key Management](./screenshots/CPT2411071943-722x400.gif)
+
 *Secure API key management interface*
 
 ![Image Processing](./screenshots/CPT2411071955-1415x708.GIF)
+
 *Batch image processing with progress tracking*
 
 ![Results Export](./screenshots/CPT2411071956-961x648.GIF)
+
 *Export results in various formats*
 
 ## ✨ Features
