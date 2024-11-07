@@ -13,7 +13,7 @@ const ProfilePage = () => {
   const [apiKey, setApiKey] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [message, setMessage] = useState({text: '', type: ''});
-  const [error, setError] = useState<ApiError | null>(null);
+  const [, setError] = useState<ApiError | null>(null);
 
   useEffect(() => {
     const savedKey = storage.getApiKey();
@@ -28,10 +28,10 @@ const ProfilePage = () => {
       // Salva nel localStorage
       storage.saveApiKey(apiKey);
       
-      setMessage({text: 'API Key salvata con successo!', type: 'ok'});
+      setMessage({text: 'Api Key saved successfully!', type: 'ok'});
     } catch (err) {
       setError({
-        message: err instanceof Error ? err.message : 'Errore sconosciuto',
+        message: err instanceof Error ? err.message : 'Error!',
         code: 'API_KEY_ERROR'
       });
     } finally {
@@ -49,7 +49,7 @@ const ProfilePage = () => {
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
             <Key className="h-5 w-5" />
-            Gestione API Keys
+          Handle API KEYS
           </CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
@@ -59,11 +59,11 @@ const ProfilePage = () => {
               type="password"
               value={apiKey}
               onChange={(e) => setApiKey(e.target.value)}
-              placeholder="Inserisci la tua OpenAI API Key"
+              placeholder="insert here your OpenAI API Key"
               className="font-mono"
             />
             <p className="text-sm text-gray-500">
-              La tua API key è salvata nel browser in modo sicuro
+             your OpenAI API Key is saved securetly into the browser
             </p>
           </div>
 
@@ -84,7 +84,7 @@ const ProfilePage = () => {
             ) : (
               <span className="flex items-center gap-2">
                 <Save className="h-4 w-4" />
-                Salva API Key
+                Save API Key
               </span>
             )}
           </Button>
